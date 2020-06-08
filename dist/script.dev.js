@@ -35,3 +35,10 @@ $('#flex-direction-column-reverse').click(function () {
     $('.boxes').attr('class', 'boxes');
   }
 });
+$('#flex-wrap-wrap').click(function () {
+  if ($(this).is(":checked") && $('#display').is(":checked")) {
+    $('.boxes').attr('class', 'boxes flex-wrap-wrap');
+  } else if ($(this).is(":not(:checked)")) {
+    $('.boxes').attr('class', 'boxes');
+  }
+});
