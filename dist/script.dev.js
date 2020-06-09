@@ -42,3 +42,17 @@ $('#flex-wrap-wrap').click(function () {
     $('.boxes').attr('class', 'boxes');
   }
 });
+$('#flex-wrap-reverse').click(function () {
+  if ($(this).is(":checked") && $('#display').is(":checked")) {
+    $('.boxes').attr('class', 'boxes flex-wrap-reverse');
+  } else if ($(this).is(":not(:checked)")) {
+    $('.boxes').attr('class', 'boxes');
+  }
+});
+$('#flex-wrap-nowrap').click(function () {
+  if ($(this).is(":checked") && $('#display').is(":checked")) {
+    $('.boxes').attr('class', 'boxes flex-wrap-nowrap');
+  } else if ($(this).is(":not(:checked)")) {
+    $('.boxes').attr('class', 'boxes');
+  }
+});

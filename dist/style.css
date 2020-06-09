@@ -67,3 +67,18 @@ nav a {
   display: flex;
   flex-direction: column-reverse;
 }
+
+.flex-wrap-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-wrap-nowraph {
+  display: flex;
+  flex-wrap: no-wrap;
+}
+
+.flex-wrap-reverse {
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
