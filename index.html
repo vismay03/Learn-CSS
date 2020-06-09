@@ -6,6 +6,7 @@
     <title>Learn CSS</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Tenali+Ramakrishna&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -17,22 +18,39 @@
 
     <div class="container">
         <div class="properties">
-            <div class="one">
+            <div class="property display">
                 <label for="display-flex">display</label><br>
                 <input type="checkbox" name="display-flex" id="display">flex  </input>  
             </div>
-            <div class="two">
+            <div class="property flex-direction">
                 <label for="flex-direction">flex-direction</label><br>
                 <input type="radio" name="flex-direction" id="flex-direction-row">row</input> 
                 <input type="radio" name="flex-direction" id="flex-direction-row-reverse">row-reverse</input>
                 <input type="radio" name="flex-direction" id="flex-direction-column">column</input>
                 <input type="radio" name="flex-direction" id="flex-direction-column-reverse">column-reverse</input>
             </div>
-            <div class="three">
+            <div class="property flex-wrap">
                 <label for="flex-wrap">flex-wrap</label><br>
                 <input type="radio" name="flex-wrap" id="flex-wrap-nowrap">nowrap</input> 
                 <input type="radio" name="flex-wrap" id="flex-wrap-wrap">wrap</input>
                 <input type="radio" name="flex-wrap" id="flex-wrap-reverse">wrap-reserve</input>
+            </div>
+            <div class="property justify-content">
+                <label for="justify-content">justify-content</label><br>
+                <input type="radio" name="justify-content" id="justify-content-flex-start">flex-start</input> 
+                <input type="radio" name="justify-content" id="justify-content-center">center</input>
+                <input type="radio" name="justify-content" id="justify-content-flex-end">flex-end</input>
+                <input type="radio" name="justify-content" id="justify-content-space-between">space-between</input> 
+                <input type="radio" name="justify-content" id="justify-content-space-around">space-around</input>
+                <input type="radio" name="justify-content" id="justify-content-space-evenly">space-evenly</input>
+            </div>
+            <div class="property align-items">
+                <label for="align-items">align-items</label><br>
+                <input type="radio" name="align-items" id="align-items-stretch">stretch</input> 
+                <input type="radio" name="align-items" id="align-items-flex-start">flex-start</input> 
+                <input type="radio" name="align-items" id="align-items-center">center</input>
+                <input type="radio" name="align-items" id="align-items-flex-end">flex-end</input>
+                <input type="radio" name="align-items" id="align-items-baseline">baseline</input>
             </div>
         </div>
         <div class="boxes">
@@ -41,9 +59,6 @@
             <div class="box box3">3</div>
             <div class="box box4">4</div>
             <div class="box box5">5</div>
-            <div class="box box4">4</div>
-            <div class="box box5">5</div>
-           
         </div>
     </div>
 

@@ -34,6 +34,14 @@ nav a {
   font-family: 'Tenali Ramakrishna', sans-serif;
 }
 
+.container .properties .property {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.container .properties .property label {
+  color: black;
+}
+
 .container .boxes {
   width: 500px;
   height: 500px;
@@ -45,8 +53,8 @@ nav a {
 .container .boxes .box {
   background-color: #bacce0;
   padding: 30px;
-  width: 80px;
-  height: 80px;
+  max-width: 80px;
+  max-height: 80px;
   margin: 5px;
 }
 
@@ -54,6 +62,20 @@ nav a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.flex-direction #flex-direction-row:hover:after {
+  content: 'default';
+  position: absolute;
+  left: 60px;
+  background-color: #000000;
+  padding: 5px;
+  font-size: 13px;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  opacity: .7;
+  -webkit-transition: content 1000ms;
+  transition: content 1000ms;
 }
 
 .flex-direction-row {
@@ -96,6 +118,17 @@ nav a {
           flex-direction: column-reverse;
 }
 
+.flex-wrap #flex-wrap-nowrap:hover:after {
+  content: 'default';
+  position: absolute;
+  left: 60px;
+  background-color: #000000;
+  padding: 5px;
+  font-size: 13px;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+
 .flex-wrap-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -108,8 +141,8 @@ nav a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: no-wrap;
-      flex-wrap: no-wrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 .flex-wrap-reverse {
@@ -118,5 +151,125 @@ nav a {
   display: flex;
   -ms-flex-wrap: wrap-reverse;
       flex-wrap: wrap-reverse;
+}
+
+.justify-content #justify-content-flex-start:hover:after {
+  content: 'default';
+  position: absolute;
+  left: 60px;
+  background-color: #000000;
+  padding: 5px;
+  font-size: 13px;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.justify-content-flex-start {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.justify-content-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.justify-content-flex-end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.justify-content-space-between {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.justify-content-space-around {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.justify-content-space-evenly {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.align-items #align-items-stretch:hover:after {
+  content: 'default';
+  position: absolute;
+  left: 60px;
+  background-color: #000000;
+  padding: 5px;
+  font-size: 13px;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.align-items-flex-start {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.align-items-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.align-items-flex-end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.align-items-stretch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.align-items-baseline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 /*# sourceMappingURL=style.css.map */
